@@ -1,0 +1,53 @@
+.game-card{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 720px;
+    line-height: 720px;
+    width: 576px;
+}
+#game, #game>canvas{
+    display: inline-block;
+    position: relative;
+    height: 624px;
+    width: 576px;
+}
+#game>canvas:first-child{
+    position: relative;
+    z-index: -1;
+}
+#game>canvas:not(first-child){
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#game-btn{
+    position: absolute;
+    left: 14px;
+    bottom: 26px;
+}
+p.score{
+    position: absolute;
+    left: 20%;
+    bottom: 26px;
+    font-size: 24px;
+    line-height: 24px;
+}
+p.prompt{
+    position: absolute;
+    right: 10%;
+    bottom: 26px;
+    font-size: 24px;
+    line-height: 24px;
+}
+button.btn[class]{
+    border: #ccc solid 4px;
+}
+button>span.glyphicon.glyphicon-play{
+    color: #4cae4c;
+}
+button>span.glyphicon.glyphicon-repeat{
+    color: #265bcc;
+}
+button>span.glyphicon.glyphicon-pause{
+    color: #c7254e;
+}
