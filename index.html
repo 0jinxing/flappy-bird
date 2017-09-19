@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>FlappyBird</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-header"><b class="">像素鸟</b></h1>
+    <div class="game-card">
+      <div id="game">
+        <canvas height="624" width="576" id="map-canvas"></canvas>
+        <canvas height="624" width="576" id="bird-canvas"></canvas>
+      </div>
+      <button class="btn btn-default btn-lg start-btn" id="game-btn"><span class="glyphicon glyphicon-play"></span></button>
+      <p class="score"></p>
+      <p class="prompt"></p>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/DOM.js"></script>
@@ -12,21 +31,6 @@
   <script src="js/gameControl.js"></script>
   <script src="js/gameDisplay.js"></script>
   <script src="js/gameGod.js"></script>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-</head>
-<body>
-<div class="container">
-    <h1 class="page-header"><b class="">像素鸟</b></h1>
-  <div class="game-card">
-    <div id="game">
-      <canvas height="624" width="576" id="map-canvas"></canvas>
-      <canvas height="624" width="576" id="bird-canvas"></canvas>
-    </div>
-    <button class="btn btn-default btn-lg start-btn" id="game-btn"><span class="glyphicon glyphicon-play"></span></button>
-    <p class="score"></p>
-    <p class="prompt"></p>
-  </div>
-</div>
 </body>
+
 </html>
